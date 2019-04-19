@@ -1,0 +1,316 @@
+/*首页样式*/
+/*main 部分start*/
+.jd{
+	height: 480px;
+	/*background: pink;*/
+	position: relative;
+}
+.jd-inner{
+    height: 480px;
+   /* background: skyblue;*/
+    position: relative;
+    z-index: 1;
+}
+.ad{
+	/*width: 100%;*//*要注意，定位会自动转变行内块，宽度跟据内容大小改变，但背景不行，所以要给宽，否则显示不了*/
+	height: 480px;
+	position: absolute;
+	left: -250px;
+	top: 0;
+}
+.ad a{
+	width: 0px;
+	height: 100%;
+	display: block;
+	position: absolute;
+    background: url(../images/ad-r.jpg) no-repeat;
+	left: 250px;
+	top: 0;
+	z-index: 999;
+	/* z这个盒子做动画，所以给它添加过渡 */
+	transition: all 0.8s;
+}
+
+.ad:hover a{
+	/* 鼠标经过 ad 这个广告大盒子的时候， 里面的这个叫 ad-r的盒子的宽度由0变为 990 */
+    width: 990px;
+}
+
+.jd-col1{
+	width: 190px;
+	height: 100%;
+	background: #6E6568;
+	float: left;
+}
+.jd-col1 ul{
+	padding:15px 0;
+}
+.jd-col1 ul li{
+	padding-left: 10px;
+	height: 28px;
+	line-height: 28px; 
+}
+.jd-col1 li:hover{
+	background-color: #999395;
+}
+.jd-col1 li a{
+	color: #fff;
+	font-size: 14px;
+}
+.jd-col1 li a:hover{
+	color: #f10215;
+}
+.jd-col1 li span{
+	font-size: 12px;
+	color: #fff;
+}
+.jd-col2{
+	width: 790px;
+	height: 100%;
+/*	background: blue;*/
+	float: left;
+	margin-left: 10px;
+}
+
+.jd-col2-hd {
+   width: 100%;
+   height: 340px;
+   background: orange;
+   position: relative;
+}
+.jd-col2-bd{
+	margin-top: 10px;
+	width: 100%;
+	height: 130px;
+}
+
+.fir-pic{
+	float:  left;
+}
+
+.sec-pic{
+	float: right;
+}
+
+.pic_l_r a{
+    font-family: icomoon;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background: rgba(0,0,0,0.3);
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+.pic_l_r .pic_l{
+    left: 0;
+    padding-left: 6px;
+}
+
+.pic_l_r .pic_r{
+	right: 0;
+	padding-right: 6px;
+}
+
+.fir-pic img, .sec-pic img{
+	width: 390px;
+}
+
+.pic_dot{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 20px;
+	background: rgba(255,255,255,0.3);
+	border-radius: 10px;
+}
+
+.pic_dot ul{
+	margin-left: 1px;
+}
+
+.pic_dot ul li{
+	width: 12px;
+	height:12px;
+	background-color: #fff;
+	float: left;
+	margin:4px 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.pic_dot .current{
+	background-color: #f10215;
+}
+
+.jd-col3{
+	width: 190px;
+	height: 100%;
+	background: pink;
+	float: right;
+}
+.jd-col3-top{
+	height: 85px;
+	background-color: #fff;
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.logo-t{
+	height: 50px;
+	position: relative;
+}
+
+.logo-t p{
+	padding: 5px 0 0 60px;
+	font-size: 12px;
+	color: #666;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.logo-t div{
+	padding: 5px 0 0 60px;
+}
+
+.logo-t div a{
+	color: #666;
+}
+.logo-t div a:hover{
+	color: #f10215;
+}
+
+.logo-t img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 5px 0 0 5px;
+}
+.logo-t .logo-cover{
+	height: 50px;
+	width: 50px;
+	background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo-b{
+	text-align: center;
+}
+
+.logo-b a{
+	text-align: center;
+	line-height: 20px;
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	color: #f10215;
+    border: 2px solid #f10215;
+    margin: 12px 1px;
+}
+.logo-b a:hover{
+	background-color: #f10215;
+	color: #fff;
+}
+
+.jd-col3-middle{
+	height: 124px;
+	padding: 10px 15px;
+	background-color: #fff;
+}
+.news-t{
+	border-bottom: 1px solid #ccc;
+}
+.news-t a{
+	height: 17px;
+	line-height: 17px;
+	float: left;
+}
+.news-t a:hover{
+	color: #f10215;
+}
+.news-t span{
+	font-size: 14px;
+	color: #999;
+	float: left;
+	padding: 0 10px 4px 10px;
+}
+.news-t .more{
+	float: right;
+}
+
+.news-b{
+	padding-top: 10px;
+}
+.news-b li{
+	height: 23px;
+}
+.news-b li a{
+	line-height: 23px;
+}
+.news-b li a:hover{
+	color: #f10215;
+}
+.jd-col3-bottom{
+	padding-top: 11px;
+	background: white;
+	height: 209px;
+	overflow: hidden;
+}
+
+.jd-col3-bottom ul{
+	width: 220px;
+}
+
+.jd-col3-bottom li{
+	width: 47px;
+	height:70px;
+	float: left;
+	border-top: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+
+.jd-col3-bottom i{
+	text-align: center;
+	display: block;
+	width: 18px;
+	height: 23px;
+	margin: 0 auto;
+    padding-top: 14px;
+	background: url(../images/sprite_fs@1x.png) no-repeat -5px -74px;
+}
+
+.jd-col3-bottom li:first-child i{
+	background-position: -5px -74px;
+}
+
+.jd-col3-bottom li:nth-child(3) i{
+	background-position: -5px -74px;
+}
+
+.jd-col3-bottom a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+}
+
+.jd-col3-bottom a:hover span{
+	color: #f10215;
+}
+
+.jd-col3-bottom span{
+	display: block;
+	margin-top: 8px;
+    
+}
+/*main 部分end*/
